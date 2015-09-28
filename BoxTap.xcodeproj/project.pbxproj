@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8001EDFF1BB87CEA00D5E526 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8001EDFE1BB87CEA00D5E526 /* AVFoundation.framework */; };
+		8001EE011BB87DDF00D5E526 /* tap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8001EE001BB87DDF00D5E526 /* tap.wav */; settings = {ASSET_TAGS = (); }; };
+		80A7E9F61BB78FA10080F4A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7E9F51BB78FA10080F4A4 /* main.m */; };
+		80A7E9F91BB78FA10080F4A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7E9F81BB78FA10080F4A4 /* AppDelegate.m */; };
+		80A7E9FC1BB78FA10080F4A4 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7E9FB1BB78FA10080F4A4 /* GameScene.m */; };
+		80A7E9FE1BB78FA10080F4A4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 80A7E9FD1BB78FA10080F4A4 /* GameScene.sks */; };
+		80A7EA011BB78FA10080F4A4 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7EA001BB78FA10080F4A4 /* GameViewController.m */; };
+		80A7EA041BB78FA10080F4A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A7EA021BB78FA10080F4A4 /* Main.storyboard */; };
+		80A7EA061BB78FA10080F4A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A7EA051BB78FA10080F4A4 /* Assets.xcassets */; };
+		80A7EA091BB78FA10080F4A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A7EA071BB78FA10080F4A4 /* LaunchScreen.storyboard */; };
+		80A7EA141BB78FA10080F4A4 /* BoxTapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7EA131BB78FA10080F4A4 /* BoxTapTests.m */; };
+		80A7EA1F1BB78FA10080F4A4 /* BoxTapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7EA1E1BB78FA10080F4A4 /* BoxTapUITests.m */; };
+		80DEA20D1BB85B0A00A44B0D /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DEA20C1BB85B0A00A44B0D /* UIColor+FlatUI.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80A7EA101BB78FA10080F4A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80A7E9E91BB78FA00080F4A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80A7E9F01BB78FA10080F4A4;
+			remoteInfo = BoxTap;
+		};
+		80A7EA1B1BB78FA10080F4A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80A7E9E91BB78FA00080F4A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80A7E9F01BB78FA10080F4A4;
+			remoteInfo = BoxTap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8001EDFE1BB87CEA00D5E526 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8001EE001BB87DDF00D5E526 /* tap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tap.wav; sourceTree = "<group>"; };
+		80A7E9F11BB78FA10080F4A4 /* BoxTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A7E9F51BB78FA10080F4A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80A7E9F71BB78FA10080F4A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80A7E9F81BB78FA10080F4A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80A7E9FA1BB78FA10080F4A4 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		80A7E9FB1BB78FA10080F4A4 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		80A7E9FD1BB78FA10080F4A4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		80A7E9FF1BB78FA10080F4A4 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		80A7EA001BB78FA10080F4A4 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		80A7EA031BB78FA10080F4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80A7EA051BB78FA10080F4A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80A7EA081BB78FA10080F4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80A7EA0A1BB78FA10080F4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A7EA0F1BB78FA10080F4A4 /* BoxTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A7EA131BB78FA10080F4A4 /* BoxTapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxTapTests.m; sourceTree = "<group>"; };
+		80A7EA151BB78FA10080F4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A7EA1A1BB78FA10080F4A4 /* BoxTapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxTapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A7EA1E1BB78FA10080F4A4 /* BoxTapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxTapUITests.m; sourceTree = "<group>"; };
+		80A7EA201BB78FA10080F4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80DEA20B1BB85B0A00A44B0D /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
+		80DEA20C1BB85B0A00A44B0D /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80A7E9EE1BB78FA10080F4A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8001EDFF1BB87CEA00D5E526 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A7EA0C1BB78FA10080F4A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A7EA171BB78FA10080F4A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80A7E9E81BB78FA00080F4A4 = {
+			isa = PBXGroup;
+			children = (
+				8001EDFE1BB87CEA00D5E526 /* AVFoundation.framework */,
+				80A7E9F31BB78FA10080F4A4 /* BoxTap */,
+				80A7EA121BB78FA10080F4A4 /* BoxTapTests */,
+				80A7EA1D1BB78FA10080F4A4 /* BoxTapUITests */,
+				80A7E9F21BB78FA10080F4A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80A7E9F21BB78FA10080F4A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80A7E9F11BB78FA10080F4A4 /* BoxTap.app */,
+				80A7EA0F1BB78FA10080F4A4 /* BoxTapTests.xctest */,
+				80A7EA1A1BB78FA10080F4A4 /* BoxTapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80A7E9F31BB78FA10080F4A4 /* BoxTap */ = {
+			isa = PBXGroup;
+			children = (
+				80A7E9F71BB78FA10080F4A4 /* AppDelegate.h */,
+				80A7E9F81BB78FA10080F4A4 /* AppDelegate.m */,
+				80A7E9FA1BB78FA10080F4A4 /* GameScene.h */,
+				80A7E9FB1BB78FA10080F4A4 /* GameScene.m */,
+				80A7E9FD1BB78FA10080F4A4 /* GameScene.sks */,
+				80A7E9FF1BB78FA10080F4A4 /* GameViewController.h */,
+				80A7EA001BB78FA10080F4A4 /* GameViewController.m */,
+				80A7EA021BB78FA10080F4A4 /* Main.storyboard */,
+				8001EE001BB87DDF00D5E526 /* tap.wav */,
+				80A7EA051BB78FA10080F4A4 /* Assets.xcassets */,
+				80A7EA071BB78FA10080F4A4 /* LaunchScreen.storyboard */,
+				80A7EA0A1BB78FA10080F4A4 /* Info.plist */,
+				80A7E9F41BB78FA10080F4A4 /* Supporting Files */,
+			);
+			path = BoxTap;
+			sourceTree = "<group>";
+		};
+		80A7E9F41BB78FA10080F4A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80DEA20B1BB85B0A00A44B0D /* UIColor+FlatUI.h */,
+				80DEA20C1BB85B0A00A44B0D /* UIColor+FlatUI.m */,
+				80A7E9F51BB78FA10080F4A4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80A7EA121BB78FA10080F4A4 /* BoxTapTests */ = {
+			isa = PBXGroup;
+			children = (
+				80A7EA131BB78FA10080F4A4 /* BoxTapTests.m */,
+				80A7EA151BB78FA10080F4A4 /* Info.plist */,
+			);
+			path = BoxTapTests;
+			sourceTree = "<group>";
+		};
+		80A7EA1D1BB78FA10080F4A4 /* BoxTapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80A7EA1E1BB78FA10080F4A4 /* BoxTapUITests.m */,
+				80A7EA201BB78FA10080F4A4 /* Info.plist */,
+			);
+			path = BoxTapUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80A7E9F01BB78FA10080F4A4 /* BoxTap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A7EA231BB78FA10080F4A4 /* Build configuration list for PBXNativeTarget "BoxTap" */;
+			buildPhases = (
+				80A7E9ED1BB78FA10080F4A4 /* Sources */,
+				80A7E9EE1BB78FA10080F4A4 /* Frameworks */,
+				80A7E9EF1BB78FA10080F4A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoxTap;
+			productName = BoxTap;
+			productReference = 80A7E9F11BB78FA10080F4A4 /* BoxTap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80A7EA0E1BB78FA10080F4A4 /* BoxTapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A7EA261BB78FA10080F4A4 /* Build configuration list for PBXNativeTarget "BoxTapTests" */;
+			buildPhases = (
+				80A7EA0B1BB78FA10080F4A4 /* Sources */,
+				80A7EA0C1BB78FA10080F4A4 /* Frameworks */,
+				80A7EA0D1BB78FA10080F4A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80A7EA111BB78FA10080F4A4 /* PBXTargetDependency */,
+			);
+			name = BoxTapTests;
+			productName = BoxTapTests;
+			productReference = 80A7EA0F1BB78FA10080F4A4 /* BoxTapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80A7EA191BB78FA10080F4A4 /* BoxTapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A7EA291BB78FA10080F4A4 /* Build configuration list for PBXNativeTarget "BoxTapUITests" */;
+			buildPhases = (
+				80A7EA161BB78FA10080F4A4 /* Sources */,
+				80A7EA171BB78FA10080F4A4 /* Frameworks */,
+				80A7EA181BB78FA10080F4A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80A7EA1C1BB78FA10080F4A4 /* PBXTargetDependency */,
+			);
+			name = BoxTapUITests;
+			productName = BoxTapUITests;
+			productReference = 80A7EA1A1BB78FA10080F4A4 /* BoxTapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80A7E9E91BB78FA00080F4A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Asheer Tanveer";
+				TargetAttributes = {
+					80A7E9F01BB78FA10080F4A4 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					80A7EA0E1BB78FA10080F4A4 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 80A7E9F01BB78FA10080F4A4;
+					};
+					80A7EA191BB78FA10080F4A4 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 80A7E9F01BB78FA10080F4A4;
+					};
+				};
+			};
+			buildConfigurationList = 80A7E9EC1BB78FA00080F4A4 /* Build configuration list for PBXProject "BoxTap" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80A7E9E81BB78FA00080F4A4;
+			productRefGroup = 80A7E9F21BB78FA10080F4A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80A7E9F01BB78FA10080F4A4 /* BoxTap */,
+				80A7EA0E1BB78FA10080F4A4 /* BoxTapTests */,
+				80A7EA191BB78FA10080F4A4 /* BoxTapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80A7E9EF1BB78FA10080F4A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A7E9FE1BB78FA10080F4A4 /* GameScene.sks in Resources */,
+				80A7EA091BB78FA10080F4A4 /* LaunchScreen.storyboard in Resources */,
+				80A7EA061BB78FA10080F4A4 /* Assets.xcassets in Resources */,
+				80A7EA041BB78FA10080F4A4 /* Main.storyboard in Resources */,
+				8001EE011BB87DDF00D5E526 /* tap.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A7EA0D1BB78FA10080F4A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A7EA181BB78FA10080F4A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80A7E9ED1BB78FA10080F4A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DEA20D1BB85B0A00A44B0D /* UIColor+FlatUI.m in Sources */,
+				80A7EA011BB78FA10080F4A4 /* GameViewController.m in Sources */,
+				80A7E9F91BB78FA10080F4A4 /* AppDelegate.m in Sources */,
+				80A7E9FC1BB78FA10080F4A4 /* GameScene.m in Sources */,
+				80A7E9F61BB78FA10080F4A4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A7EA0B1BB78FA10080F4A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A7EA141BB78FA10080F4A4 /* BoxTapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A7EA161BB78FA10080F4A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A7EA1F1BB78FA10080F4A4 /* BoxTapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80A7EA111BB78FA10080F4A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80A7E9F01BB78FA10080F4A4 /* BoxTap */;
+			targetProxy = 80A7EA101BB78FA10080F4A4 /* PBXContainerItemProxy */;
+		};
+		80A7EA1C1BB78FA10080F4A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80A7E9F01BB78FA10080F4A4 /* BoxTap */;
+			targetProxy = 80A7EA1B1BB78FA10080F4A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80A7EA021BB78FA10080F4A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80A7EA031BB78FA10080F4A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80A7EA071BB78FA10080F4A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80A7EA081BB78FA10080F4A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80A7EA211BB78FA10080F4A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		80A7EA221BB78FA10080F4A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80A7EA241BB78FA10080F4A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BoxTap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asheertanveer.BoxTap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		80A7EA251BB78FA10080F4A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BoxTap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asheertanveer.BoxTap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		80A7EA271BB78FA10080F4A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = BoxTapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asheertanveer.BoxTapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoxTap.app/BoxTap";
+			};
+			name = Debug;
+		};
+		80A7EA281BB78FA10080F4A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BoxTapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asheertanveer.BoxTapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoxTap.app/BoxTap";
+			};
+			name = Release;
+		};
+		80A7EA2A1BB78FA10080F4A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = BoxTapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asheertanveer.BoxTapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BoxTap;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		80A7EA2B1BB78FA10080F4A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BoxTapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asheertanveer.BoxTapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BoxTap;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80A7E9EC1BB78FA00080F4A4 /* Build configuration list for PBXProject "BoxTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A7EA211BB78FA10080F4A4 /* Debug */,
+				80A7EA221BB78FA10080F4A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80A7EA231BB78FA10080F4A4 /* Build configuration list for PBXNativeTarget "BoxTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A7EA241BB78FA10080F4A4 /* Debug */,
+				80A7EA251BB78FA10080F4A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80A7EA261BB78FA10080F4A4 /* Build configuration list for PBXNativeTarget "BoxTapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A7EA271BB78FA10080F4A4 /* Debug */,
+				80A7EA281BB78FA10080F4A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80A7EA291BB78FA10080F4A4 /* Build configuration list for PBXNativeTarget "BoxTapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A7EA2A1BB78FA10080F4A4 /* Debug */,
+				80A7EA2B1BB78FA10080F4A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80A7E9E91BB78FA00080F4A4 /* Project object */;
+}
