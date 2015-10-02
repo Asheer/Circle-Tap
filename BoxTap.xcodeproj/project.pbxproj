@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		8001EDFF1BB87CEA00D5E526 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8001EDFE1BB87CEA00D5E526 /* AVFoundation.framework */; };
 		8001EE011BB87DDF00D5E526 /* tap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8001EE001BB87DDF00D5E526 /* tap.wav */; settings = {ASSET_TAGS = (); }; };
+		804E923C1BBED555002B6CEF /* gameover.wav in Resources */ = {isa = PBXBuildFile; fileRef = 804E923B1BBED555002B6CEF /* gameover.wav */; settings = {ASSET_TAGS = (); }; };
+		804FAE291BB9E76E000DEA2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 804FAE281BB9E76E000DEA2E /* main.m */; };
+		804FAE2C1BB9E76E000DEA2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 804FAE2B1BB9E76E000DEA2E /* AppDelegate.m */; };
+		804FAE2F1BB9E76E000DEA2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 804FAE2E1BB9E76E000DEA2E /* ViewController.m */; };
+		804FAE321BB9E76E000DEA2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804FAE301BB9E76E000DEA2E /* Main.storyboard */; };
+		804FAE341BB9E76E000DEA2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804FAE331BB9E76E000DEA2E /* Assets.xcassets */; };
+		804FAE371BB9E76E000DEA2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804FAE351BB9E76E000DEA2E /* LaunchScreen.storyboard */; };
+		804FAE421BB9E76F000DEA2E /* That_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 804FAE411BB9E76F000DEA2E /* That_AppTests.m */; };
+		804FAE4D1BB9E76F000DEA2E /* That_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 804FAE4C1BB9E76F000DEA2E /* That_AppUITests.m */; };
 		80A7E9F61BB78FA10080F4A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7E9F51BB78FA10080F4A4 /* main.m */; };
 		80A7E9F91BB78FA10080F4A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7E9F81BB78FA10080F4A4 /* AppDelegate.m */; };
 		80A7E9FC1BB78FA10080F4A4 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7E9FB1BB78FA10080F4A4 /* GameScene.m */; };
@@ -23,6 +32,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		804FAE3E1BB9E76F000DEA2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80A7E9E91BB78FA00080F4A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 804FAE241BB9E76E000DEA2E;
+			remoteInfo = "That App";
+		};
+		804FAE491BB9E76F000DEA2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80A7E9E91BB78FA00080F4A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 804FAE241BB9E76E000DEA2E;
+			remoteInfo = "That App";
+		};
 		80A7EA101BB78FA10080F4A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 80A7E9E91BB78FA00080F4A4 /* Project object */;
@@ -42,6 +65,23 @@
 /* Begin PBXFileReference section */
 		8001EDFE1BB87CEA00D5E526 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8001EE001BB87DDF00D5E526 /* tap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tap.wav; sourceTree = "<group>"; };
+		804E923B1BBED555002B6CEF /* gameover.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameover.wav; sourceTree = "<group>"; };
+		804FAE251BB9E76E000DEA2E /* That App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "That App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804FAE281BB9E76E000DEA2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		804FAE2A1BB9E76E000DEA2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		804FAE2B1BB9E76E000DEA2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		804FAE2D1BB9E76E000DEA2E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		804FAE2E1BB9E76E000DEA2E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		804FAE311BB9E76E000DEA2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		804FAE331BB9E76E000DEA2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		804FAE361BB9E76E000DEA2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		804FAE381BB9E76E000DEA2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		804FAE3D1BB9E76E000DEA2E /* That AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "That AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804FAE411BB9E76F000DEA2E /* That_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = That_AppTests.m; sourceTree = "<group>"; };
+		804FAE431BB9E76F000DEA2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		804FAE481BB9E76F000DEA2E /* That AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "That AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804FAE4C1BB9E76F000DEA2E /* That_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = That_AppUITests.m; sourceTree = "<group>"; };
+		804FAE4E1BB9E76F000DEA2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80A7E9F11BB78FA10080F4A4 /* BoxTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A7E9F51BB78FA10080F4A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80A7E9F71BB78FA10080F4A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +106,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		804FAE221BB9E76E000DEA2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804FAE3A1BB9E76E000DEA2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804FAE451BB9E76F000DEA2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80A7E9EE1BB78FA10080F4A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,6 +152,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		804FAE261BB9E76E000DEA2E /* That App */ = {
+			isa = PBXGroup;
+			children = (
+				804FAE2A1BB9E76E000DEA2E /* AppDelegate.h */,
+				804FAE2B1BB9E76E000DEA2E /* AppDelegate.m */,
+				804FAE2D1BB9E76E000DEA2E /* ViewController.h */,
+				804FAE2E1BB9E76E000DEA2E /* ViewController.m */,
+				804FAE301BB9E76E000DEA2E /* Main.storyboard */,
+				804FAE331BB9E76E000DEA2E /* Assets.xcassets */,
+				804FAE351BB9E76E000DEA2E /* LaunchScreen.storyboard */,
+				804FAE381BB9E76E000DEA2E /* Info.plist */,
+				804FAE271BB9E76E000DEA2E /* Supporting Files */,
+			);
+			path = "That App";
+			sourceTree = "<group>";
+		};
+		804FAE271BB9E76E000DEA2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				804FAE281BB9E76E000DEA2E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		804FAE401BB9E76F000DEA2E /* That AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				804FAE411BB9E76F000DEA2E /* That_AppTests.m */,
+				804FAE431BB9E76F000DEA2E /* Info.plist */,
+			);
+			path = "That AppTests";
+			sourceTree = "<group>";
+		};
+		804FAE4B1BB9E76F000DEA2E /* That AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				804FAE4C1BB9E76F000DEA2E /* That_AppUITests.m */,
+				804FAE4E1BB9E76F000DEA2E /* Info.plist */,
+			);
+			path = "That AppUITests";
+			sourceTree = "<group>";
+		};
 		80A7E9E81BB78FA00080F4A4 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +201,9 @@
 				80A7E9F31BB78FA10080F4A4 /* BoxTap */,
 				80A7EA121BB78FA10080F4A4 /* BoxTapTests */,
 				80A7EA1D1BB78FA10080F4A4 /* BoxTapUITests */,
+				804FAE261BB9E76E000DEA2E /* That App */,
+				804FAE401BB9E76F000DEA2E /* That AppTests */,
+				804FAE4B1BB9E76F000DEA2E /* That AppUITests */,
 				80A7E9F21BB78FA10080F4A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +214,9 @@
 				80A7E9F11BB78FA10080F4A4 /* BoxTap.app */,
 				80A7EA0F1BB78FA10080F4A4 /* BoxTapTests.xctest */,
 				80A7EA1A1BB78FA10080F4A4 /* BoxTapUITests.xctest */,
+				804FAE251BB9E76E000DEA2E /* That App.app */,
+				804FAE3D1BB9E76E000DEA2E /* That AppTests.xctest */,
+				804FAE481BB9E76F000DEA2E /* That AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +233,7 @@
 				80A7EA001BB78FA10080F4A4 /* GameViewController.m */,
 				80A7EA021BB78FA10080F4A4 /* Main.storyboard */,
 				8001EE001BB87DDF00D5E526 /* tap.wav */,
+				804E923B1BBED555002B6CEF /* gameover.wav */,
 				80A7EA051BB78FA10080F4A4 /* Assets.xcassets */,
 				80A7EA071BB78FA10080F4A4 /* LaunchScreen.storyboard */,
 				80A7EA0A1BB78FA10080F4A4 /* Info.plist */,
@@ -163,6 +273,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		804FAE241BB9E76E000DEA2E /* That App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804FAE551BB9E76F000DEA2E /* Build configuration list for PBXNativeTarget "That App" */;
+			buildPhases = (
+				804FAE211BB9E76E000DEA2E /* Sources */,
+				804FAE221BB9E76E000DEA2E /* Frameworks */,
+				804FAE231BB9E76E000DEA2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "That App";
+			productName = "That App";
+			productReference = 804FAE251BB9E76E000DEA2E /* That App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		804FAE3C1BB9E76E000DEA2E /* That AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804FAE561BB9E76F000DEA2E /* Build configuration list for PBXNativeTarget "That AppTests" */;
+			buildPhases = (
+				804FAE391BB9E76E000DEA2E /* Sources */,
+				804FAE3A1BB9E76E000DEA2E /* Frameworks */,
+				804FAE3B1BB9E76E000DEA2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				804FAE3F1BB9E76F000DEA2E /* PBXTargetDependency */,
+			);
+			name = "That AppTests";
+			productName = "That AppTests";
+			productReference = 804FAE3D1BB9E76E000DEA2E /* That AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		804FAE471BB9E76F000DEA2E /* That AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804FAE571BB9E76F000DEA2E /* Build configuration list for PBXNativeTarget "That AppUITests" */;
+			buildPhases = (
+				804FAE441BB9E76F000DEA2E /* Sources */,
+				804FAE451BB9E76F000DEA2E /* Frameworks */,
+				804FAE461BB9E76F000DEA2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				804FAE4A1BB9E76F000DEA2E /* PBXTargetDependency */,
+			);
+			name = "That AppUITests";
+			productName = "That AppUITests";
+			productReference = 804FAE481BB9E76F000DEA2E /* That AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		80A7E9F01BB78FA10080F4A4 /* BoxTap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80A7EA231BB78FA10080F4A4 /* Build configuration list for PBXNativeTarget "BoxTap" */;
@@ -225,6 +388,17 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Asheer Tanveer";
 				TargetAttributes = {
+					804FAE241BB9E76E000DEA2E = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					804FAE3C1BB9E76E000DEA2E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 804FAE241BB9E76E000DEA2E;
+					};
+					804FAE471BB9E76F000DEA2E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 804FAE241BB9E76E000DEA2E;
+					};
 					80A7E9F01BB78FA10080F4A4 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -254,15 +428,43 @@
 				80A7E9F01BB78FA10080F4A4 /* BoxTap */,
 				80A7EA0E1BB78FA10080F4A4 /* BoxTapTests */,
 				80A7EA191BB78FA10080F4A4 /* BoxTapUITests */,
+				804FAE241BB9E76E000DEA2E /* That App */,
+				804FAE3C1BB9E76E000DEA2E /* That AppTests */,
+				804FAE471BB9E76F000DEA2E /* That AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		804FAE231BB9E76E000DEA2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804FAE371BB9E76E000DEA2E /* LaunchScreen.storyboard in Resources */,
+				804FAE341BB9E76E000DEA2E /* Assets.xcassets in Resources */,
+				804FAE321BB9E76E000DEA2E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804FAE3B1BB9E76E000DEA2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804FAE461BB9E76F000DEA2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80A7E9EF1BB78FA10080F4A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804E923C1BBED555002B6CEF /* gameover.wav in Resources */,
 				80A7E9FE1BB78FA10080F4A4 /* GameScene.sks in Resources */,
 				80A7EA091BB78FA10080F4A4 /* LaunchScreen.storyboard in Resources */,
 				80A7EA061BB78FA10080F4A4 /* Assets.xcassets in Resources */,
@@ -288,6 +490,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		804FAE211BB9E76E000DEA2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804FAE2F1BB9E76E000DEA2E /* ViewController.m in Sources */,
+				804FAE2C1BB9E76E000DEA2E /* AppDelegate.m in Sources */,
+				804FAE291BB9E76E000DEA2E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804FAE391BB9E76E000DEA2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804FAE421BB9E76F000DEA2E /* That_AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804FAE441BB9E76F000DEA2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804FAE4D1BB9E76F000DEA2E /* That_AppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80A7E9ED1BB78FA10080F4A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,6 +547,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		804FAE3F1BB9E76F000DEA2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 804FAE241BB9E76E000DEA2E /* That App */;
+			targetProxy = 804FAE3E1BB9E76F000DEA2E /* PBXContainerItemProxy */;
+		};
+		804FAE4A1BB9E76F000DEA2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 804FAE241BB9E76E000DEA2E /* That App */;
+			targetProxy = 804FAE491BB9E76F000DEA2E /* PBXContainerItemProxy */;
+		};
 		80A7EA111BB78FA10080F4A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 80A7E9F01BB78FA10080F4A4 /* BoxTap */;
@@ -332,6 +570,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		804FAE301BB9E76E000DEA2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804FAE311BB9E76E000DEA2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		804FAE351BB9E76E000DEA2E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804FAE361BB9E76E000DEA2E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		80A7EA021BB78FA10080F4A4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -351,6 +605,85 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		804FAE4F1BB9E76F000DEA2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "That App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asheertanveer.That-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		804FAE501BB9E76F000DEA2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "That App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asheertanveer.That-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		804FAE511BB9E76F000DEA2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "That AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asheertanveer.That-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/That App.app/That App";
+			};
+			name = Debug;
+		};
+		804FAE521BB9E76F000DEA2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "That AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asheertanveer.That-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/That App.app/That App";
+			};
+			name = Release;
+		};
+		804FAE531BB9E76F000DEA2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "That AppUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asheertanveer.That-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "That App";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		804FAE541BB9E76F000DEA2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "That AppUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asheertanveer.That-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "That App";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		80A7EA211BB78FA10080F4A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -368,6 +701,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -411,6 +745,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -435,6 +770,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BoxTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asheertanveer.BoxTap;
@@ -446,6 +782,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BoxTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asheertanveer.BoxTap;
@@ -506,6 +843,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		804FAE551BB9E76F000DEA2E /* Build configuration list for PBXNativeTarget "That App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804FAE4F1BB9E76F000DEA2E /* Debug */,
+				804FAE501BB9E76F000DEA2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804FAE561BB9E76F000DEA2E /* Build configuration list for PBXNativeTarget "That AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804FAE511BB9E76F000DEA2E /* Debug */,
+				804FAE521BB9E76F000DEA2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804FAE571BB9E76F000DEA2E /* Build configuration list for PBXNativeTarget "That AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804FAE531BB9E76F000DEA2E /* Debug */,
+				804FAE541BB9E76F000DEA2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		80A7E9EC1BB78FA00080F4A4 /* Build configuration list for PBXProject "BoxTap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -20,7 +20,7 @@ float x,y;
 BOOL gameover,doubleCircle;
 NSInteger bestScore;
 AVAudioPlayer *player;
-
+AVAudioPlayer *gameOverPlayer;
 @implementation GameScene
 
 
@@ -31,7 +31,20 @@ AVAudioPlayer *player;
     doubleCircle = NO;
     score = 0;
     scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"TimesNewRomanPSMT-Bold"];
-    scoreLabel.position = CGPointMake(320, self.frame.size.height - 35);
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        CGSize result = [[UIScreen mainScreen] bounds].size;
+        if(result.height == 480)
+        {
+            // iPhone Classic
+            scoreLabel.position = CGPointMake(320, self.frame.size.height - 35);
+
+            
+        } else {
+            scoreLabel.position = CGPointMake(350, self.frame.size.height - 35);
+        }
+        
+    }
     scoreLabel.zPosition = 4;
     scoreLabel.text = @"Score : 0";
     scoreLabel.color = [SKColor whiteColor];
@@ -52,7 +65,9 @@ AVAudioPlayer *player;
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"tap" ofType:@"wav"]];
     player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     
-
+    
+    NSURL *urlGameOver = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"gameover" ofType:@"wav"]];
+    gameOverPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:urlGameOver error:nil];
     
 }
 
@@ -85,8 +100,8 @@ AVAudioPlayer *player;
                 shape2 = [SKShapeNode node];
                 CGRect rect2 = CGRectMake(0, 0, 40, 40);
                 shape2.path = [self circleInRect:rect2];
-                shape2.strokeColor = [SKColor greenColor];
-                shape2.fillColor = [SKColor blueColor];
+                shape2.strokeColor = [SKColor blackColor];
+                shape2.fillColor = [SKColor orangeColor];
                 float newY2 = arc4random() % (int)[UIScreen mainScreen].bounds.size.height + 100;
                 shape2.position = CGPointMake(self.frame.size.width/4,newY2);
                 [self addChild:shape2];
@@ -102,8 +117,14 @@ AVAudioPlayer *player;
                 [self addChild:shape2];
             }
 
-        } else {
-            // gameover
+        }
+        /*
+        else {
+            // gameover sound
+            
+            if(!gameover)
+                	[gameOverPlayer play];
+            
             gameover = YES;
 
             [shape removeFromParent];
@@ -139,7 +160,7 @@ AVAudioPlayer *player;
             retryLabel.fontSize = 40;
             
             [self addChild:retryLabel];
-        }
+        } */
         
         if([retryLabel containsPoint:location] && gameover == YES) {
           [self removeAllChildren];
@@ -181,13 +202,14 @@ AVAudioPlayer *player;
             newY = oldY +=4;
         } else if(score > 4 && score < 12) {
             self.backgroundColor = [SKColor yellowColor];
-
-            shape.fillColor = [UIColor peterRiverColor];
+            scoreLabel.fontColor = [SKColor blackColor];
+            shape.fillColor = [UIColor whiteColor];
             newX = oldX+=6;
             newY = oldY+=6;
         } else if(score >= 12 && score <14) {
             self.backgroundColor = [SKColor purpleColor];
-            shape.fillColor = [UIColor whiteColor];
+            shape.fillColor = [UIColor yellowColor];
+            scoreLabel.fontColor = [SKColor whiteColor];
          //   newX = arc4random() % (int)[UIScreen mainScreen].bounds.size.width + 60;
             newY = oldY +=2.0;
             newX = newY +=1.5;
@@ -196,12 +218,18 @@ AVAudioPlayer *player;
             shape.fillColor = [UIColor pumpkinColor];
             newX = oldX+= 8;
             newY = oldY+=7.5;
-    }
+        } else {
+            self.backgroundColor = [SKColor brownColor];
+            shape.fillColor = [UIColor redColor];
+            newX = oldX+= 10.5;
+            newY = oldY+=9.5;
+            
+        }
     
     CGPoint newLocation = CGPointMake(newX,newY);
     shape.position = newLocation;
-    
-        if(score >=14 && score < 17 && doubleCircle == YES) {
+    	
+        if(score >=12 && score < 17 && doubleCircle == YES) {
             CGFloat oldX2 = shape2.position.x;
             CGFloat oldY2 = shape2.position.y;
             
@@ -213,12 +241,15 @@ AVAudioPlayer *player;
         if(score >=17 && doubleCircle == YES) {
             CGFloat oldX2 = shape2.position.x;
             CGFloat oldY2 = shape2.position.y;
-        
-            newX2 = oldX2+=6.5;
+            shape2.fillColor = [SKColor blueColor];
+
+            newX2 = oldX2+=5.5;
             newY2 = oldY2+=7.5;
             CGPoint newLocation2 = CGPointMake(newX2,newY2);
             shape2.position = newLocation2;
         }
+        
+    
         
         if (!CGRectIntersectsRect(self.frame, shape.frame) || (!CGRectIntersectsRect(self.frame, shape2.frame))) {   // Outside the bounds of the scene because the frames are no longer intersecting.
 
@@ -230,7 +261,7 @@ AVAudioPlayer *player;
 
         } else if(score > 15) {
             
-            float newX = arc4random_uniform([UIScreen mainScreen].bounds.size.width + 60);
+            float newX = arc4random_uniform([UIScreen mainScreen].bounds.size.width + 80);
             float newY = arc4random_uniform([UIScreen mainScreen].bounds.size.height + 100);
 
             shape.position = CGPointMake(newX,newY);
@@ -240,7 +271,7 @@ AVAudioPlayer *player;
         
         if ((!CGRectIntersectsRect(self.frame, shape2.frame))) {   // Outside the bounds of the scene because the frames are no longer intersecting.
             
-            if(doubleCircle == YES && score >= 14) {
+            if(doubleCircle == YES) {
                 
                 float newX = arc4random_uniform([UIScreen mainScreen].bounds.size.width + 80);
                 float newY = arc4random_uniform([UIScreen mainScreen].bounds.size.height + 120);
